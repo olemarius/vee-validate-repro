@@ -27,6 +27,12 @@ export default defineConfig(() => {
                     replacement: resolve(__dirname, 'types'),
                 },
             ],
+            /**
+             * If you have duplicated copies of the same dependency in your app (likely due to hoisting or linked packages in monorepos),
+             * use this option to force Vite to always resolve listed dependencies to the same copy (from project root).
+             * https://vitejs.dev/config/shared-options#resolve-dedupe
+             */
+            dedupe: ['vee-validate'],
         },
         plugins: [
             vue(),
