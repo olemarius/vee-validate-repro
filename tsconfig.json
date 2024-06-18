@@ -1,0 +1,30 @@
+{
+    // https://vuejs.org/guide/typescript/overview.html#configuring-tsconfig-json
+    "compilerOptions": {
+        "target": "ESNext",
+        "jsx": "preserve",
+        "lib": ["ESNext", "DOM"],
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "strict": true,
+        "noEmit": true,
+        "sourceMap": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "**.js",
+        "**.json"
+    ],
+    "exclude": [
+        "dist",
+        ".github",
+        "eslint.config.mjs",
+        "pnpm-workspace.yaml"
+    ]
+}

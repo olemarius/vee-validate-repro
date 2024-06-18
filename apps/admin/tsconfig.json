@@ -1,0 +1,19 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "@/components/ui/*": ["../../packages/ui/src/components/ui/*"],
+            "@/*": ["./src/*"],
+            "types/*": ["./types/*"]
+
+        },
+        "outDir": "./dist"
+    },
+    "include": [
+        "**/*.d.ts",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.vue"
+
+    ]
+}

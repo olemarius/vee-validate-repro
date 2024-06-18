@@ -1,0 +1,49 @@
+@tailwind base; 
+
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+    :root {
+        /* Default background color of <body />...etc */
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+
+        /* Muted backgrounds such as <TabsList />, <Skeleton /> and <Switch /> */
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+
+        /* Background color for popovers such as <DropdownMenu />, <HoverCard />, <Popover /> */
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+
+        /* Background color for <Card /> */
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+
+        /* Border color for inputs such as <Input />, <Select />, <Textarea /> */
+        --border:214.3 31.8% 80%;
+        --input:214.3 31.8% 80%;
+
+        /* Primary colors for <Button /> */
+        --primary: 202.7 88.9% 50.4%; /*221.2 83.2% 53.3% */
+        --primary-foreground: 210 40% 98%;
+
+        /* Secondary colors for <Button /> */
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+
+        /* Used for accents such as hover effects on <DropdownMenuItem>, <SelectItem>...etc */
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+
+        /* Used for destructive actions such as <Button variant="destructive"> */
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        /* Used for focus ring */
+        --ring: var(--primary); /*221.2 83.2% 53.3% */
+        /* Border radius for card, input and buttons */
+        --radius: 0.5rem;
+    }
+}

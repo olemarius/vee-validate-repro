@@ -1,0 +1,48 @@
+{
+  "name": "@vee-validate-repro/ui",
+  "version": "2.187.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./*": "./src/components/ui/*/index.ts"
+  },
+  "scripts": {
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vee-validate": "4.11.8",
+    "@vee-validate/zod": "4.11.8"  
+  },
+  "dependencies": {
+    "@unovis/ts": "^1.4.1",
+    "@unovis/vue": "^1.4.1",
+    "@vueuse/core": "^10.11.0",
+    "class-variance-authority": "^0.7.0",
+    "@internationalized/date": "^3.5.4",
+    "clsx": "^2.1.1",
+    "embla-carousel": "^8.1.5",
+    "embla-carousel-vue": "^8.1.5",
+    "lucide-vue-next": "^0.394.0",
+    "radix-vue": "^1.8.3",
+    "@tanstack/vue-table": "^8.17.3",
+    "v-calendar": "^3.1.2",
+    "date-fns": "^3.6.0",
+    "vaul-vue": "^0.1.2",
+    "maska": "^2.1.10",
+    "vue": "3.4.27",
+    "vue-content-loader": "^2.0.1",
+    "vue-i18n": "^9.13.1",
+    "vue-router": "^4.3.2",
+    "vue-sonner": "^1.1.2",
+    "tailwind-merge": "^2.3.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "vee-validate" : "^4.13.1",
+    "@vee-validate/zod": "^4.13.1",
+    "@vitejs/plugin-vue": "5.0.4",
+    "typescript": "5.4.5",
+    "vite": "5.2.11",
+    "vue-tsc": "2.0.17"
+  }
+}

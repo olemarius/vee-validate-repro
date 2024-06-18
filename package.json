@@ -1,0 +1,56 @@
+{
+  "name": "vee-validate-repro",
+  "type": "module",
+  "version": "2.187.0",
+  "private": true,
+  "packageManager": "pnpm@9.1.2",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build --no-daemon",
+    "preview": "turbo run preview --no-daemon",
+    "lint": "oxlint && eslint --format=pretty ."
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.14.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.1",
+    "eslint": "^9.5.0",
+    "eslint-formatter-pretty": "^6.0.1",
+    "eslint-plugin-oxlint": "^0.4.0",
+    "husky": "^9.0.11",
+    "jsdom": "^24.1.0",
+    "lint-staged": "^15.2.7",
+    "oxlint": "^0.4.4",
+    "simple-git-hooks": "^2.11.1",
+    "standard-version": "^9.5.0",
+    "turbo": "^2.0.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0",
+    "xml2js": "^0.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog",
+      "maxHeaderWidth": 200,
+      "subjectLimit": 100,
+      "maxLineWidth": 100
+    }
+  },
+  "volta": {
+    "node": "20.14.0",
+    "pnpm": "9.3.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix --no-warn-ignored"
+  }
+}
